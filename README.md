@@ -5,9 +5,13 @@ My goal was to create a simple, elegant, and functional interface that aligns wi
 To achieve this, I used the following technologies:
 
 • HTML5 for structure.
+
 • CSS3 and Bootstrap for design and responsiveness.
+
 • JavaScript for dynamic interactions.
+
 • PHP and MySQL for server-side functionalities, such as managing messages through the contact form.
+
 
 The website stands out for its simplicity and efficiency. The colors and typography were carefully selected to provide a pleasant user experience while adhering to current standards, keeping in mind the IT theme that reflects my background.
 
