@@ -4,11 +4,11 @@ Personal portfolio website showcasing my work as a Full-Stack & DevOps developer
 
 ### What’s inside
 - Hero / About / Services / Projects / Contact sections
-- Responsive, performance-focused UI
-- Deployed via GitHub Pages
+- Responsive, mobile first, performance-focused UI
+- Temporarily deployed via GitHub Pages
 
 ### Live
-Add your GitHub Pages link here.
+https://zhairi02.github.io/Portfolio/
 
 ---
 
