@@ -1,18 +1,15 @@
-I designed this website while adhering to modern principles and current trends.
+# Mohammed Zhairi — Portfolio
 
-My goal was to create a simple, elegant, and functional interface that aligns with the technological and IT atmosphere.
+Personal portfolio website showcasing my work as a Full-Stack & DevOps developer, including selected freelance projects under my **Zhairi WS** brand.
 
-To achieve this, I used the following technologies:
+### What’s inside
+- Hero / About / Services / Projects / Contact sections
+- Responsive, performance-focused UI
+- Deployed via GitHub Pages
 
-• HTML5 for structure.
+### Live
+Add your GitHub Pages link here.
 
-• CSS3 and Bootstrap for design and responsiveness.
+---
 
-• JavaScript for dynamic interactions.
-
-• PHP and MySQL for server-side functionalities, such as managing messages through the contact form.
-
-
-The website stands out for its simplicity and efficiency. The colors and typography were carefully selected to provide a pleasant user experience while adhering to current standards, keeping in mind the IT theme that reflects my background.
-
-I incorporated some advanced features inspired by well-known websites to enhance interactivity and meet modern expectations. However, I ensured that the implementation remained clear and free of excessive complexity, staying within my skill level.
+Built by Mohammed Zhairi.
