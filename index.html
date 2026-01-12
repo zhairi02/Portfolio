@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#050816" />
+
+    <title>Mohammed Zhairi - Full Stack Web Developer</title>
+    <meta name="description" content="I build modern websites from concept → branding → SEO → deployment." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#top">
+          <img class="brand__logo" src="assets/logo2.png" alt="Logo" onerror="this.style.display='none';" />
+        </a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav__toggleBar"></span>
+          <span class="nav__toggleBar"></span>
+          <span class="nav__toggleBar"></span>
+        </button>
+
+        <div class="nav__links" id="navLinks">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#services">Services</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <a class="nav__cta" href="#contact">Let’s build</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero hero--full container">
+        <div class="hero__grid">
+          <div class="hero__content reveal">
+            <h1 class="hero__title">
+              Mohammed Zhairi<br />
+              <span class="hero__titleAccent">Full Stack Web Developer</span>
+            </h1>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">View work</a>
+              <a class="btn btn--ghost" href="#contact">Contact me</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="scrollCue" type="button" aria-label="Scroll down" data-target="#about">
+          <span class="scrollCue__ring" aria-hidden="true"></span>
+          <svg class="scrollCue__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </section>
+
+      <!-- About -->
+      <section class="section container section--about" id="about">
+        <div class="aboutCenter reveal">
+          <p class="aboutCenter__lead">
+            Hi, I’m <span class="aboutCenter__highlight">Mohammed Zhairi</span> - a
+            <span class="aboutCenter__highlight">Full Stack &amp; DevOps Developer</span> focused on building fast, modern websites that feel premium and convert.
+          </p>
+
+          <p class="muted aboutCenter__text">
+            I’m currently completing my <strong>BSc in Computer Science</strong> at <strong>Sorbonne Université</strong>,
+            and I’m aiming to start a <strong>Master’s in 2026</strong> in <strong>alternance</strong> (MIAGE / BIS).
+            I also help <strong>medium-sized businesses (PMEs)</strong> with <strong>tailored web solutions</strong> - clean UI, solid structure, SEO-ready foundations, and reliable deployment.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section container" id="services">
+        <div class="sectionHead reveal">
+          <h2 class="h2">Services</h2>
+          <p class="muted">Web development solutions from A to Z.</p>
+        </div>
+
+        <div class="cards3">
+          <article class="serviceMac reveal">
+            <div class="tools" aria-hidden="true">
+              <div class="circle"><span class="red box"></span></div>
+              <div class="circle"><span class="yellow box"></span></div>
+              <div class="circle"><span class="green box"></span></div>
+            </div>
+
+            <div class="serviceMac__content">
+              <h3 class="h3 serviceMac__title">Vitrine site (one page)</h3>
+              <p class="muted serviceMac__text">
+                A clean, modern landing page focused on clarity, speed, and conversion.
+              </p>
+            </div>
+          </article>
+
+          <article class="serviceMac reveal">
+            <div class="tools" aria-hidden="true">
+              <div class="circle"><span class="red box"></span></div>
+              <div class="circle"><span class="yellow box"></span></div>
+              <div class="circle"><span class="green box"></span></div>
+            </div>
+
+            <div class="serviceMac__content">
+              <h3 class="h3 serviceMac__title">Professional site (multi-page)</h3>
+              <p class="muted serviceMac__text">
+                A structured website with multiple pages to present your services and build trust.
+              </p>
+            </div>
+          </article>
+
+          <article class="serviceMac reveal">
+            <div class="tools" aria-hidden="true">
+              <div class="circle"><span class="red box"></span></div>
+              <div class="circle"><span class="yellow box"></span></div>
+              <div class="circle"><span class="green box"></span></div>
+            </div>
+
+            <div class="serviceMac__content">
+              <h3 class="h3 serviceMac__title">E-commerce site</h3>
+              <p class="muted serviceMac__text">
+                A storefront designed for smooth shopping, clear product pages, and easy checkout.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <div>
+            <h3 class="h3">Ready to launch something serious?</h3>
+            <p class="muted">Message me and I’ll reply with the best plan for your project.</p>
+          </div>
+          <a class="btn btn--primary" href="#contact">Request a quote</a>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section container" id="projects">
+        <div class="sectionHead reveal">
+          <h2 class="h2">Projects</h2>
+          <p class="muted">Recent websites I’ve designed and built end-to-end, from concept to deployment.</p>
+        </div>
+
+        <div class="projectsRows">
+          <article class="projectRow reveal">
+            <div class="projectRow__media">
+              <img src="assets/was.png" alt="WAS Redovisningskonsulter website screenshot" loading="lazy" />
+            </div>
+
+            <div class="projectRow__body">
+              <h3 class="h3 projectRow__title">WAS Redovisningskonsulter - Stockholm</h3>
+              <p class="muted projectRow__desc">
+                Accounting Firm - a complete web presence built from scratch - from concept to UI design, SEO foundations, and deployment.
+                The goal was simple: turn “no digital presence” into a clean, trustworthy site that makes it easy for clients to reach out.
+              </p>
+
+              <ul class="projectRow__bullets">
+                <li>Brand-aligned design + clear service structure</li>
+                <li>SEO-ready pages (titles, metadata, structure)</li>
+                <li>Fast, responsive build + reliable deployment</li>
+              </ul>
+
+              <div class="projectRow__links">
+                <a class="btn btn--primary" href="https://wasredovisningskonsulter.se" target="_blank" rel="noopener">Visit website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectRow projectRow--rev reveal">
+            <div class="projectRow__media">
+              <img src="assets/chezmaram.png" alt="Chez Maram website screenshot" loading="lazy" />
+            </div>
+
+            <div class="projectRow__body">
+              <h3 class="h3 projectRow__title">Chez Maram - Paris</h3>
+              <p class="muted projectRow__desc">
+                Café - full redesign of an outdated website to improve engagement and make key actions obvious: explore the menu, book, and find the café quickly.
+                In the last 3 months, the new experience supported a <strong>150K+</strong> user flow, with stronger SEO and visibility.
+              </p>
+
+              <ul class="projectRow__bullets">
+                <li>Simplified UI + mobile-first layout</li>
+                <li>Menu + booking flow optimized for conversion</li>
+                <li>SEO improvements + visibility support</li>
+              </ul>
+
+              <div class="projectRow__links">
+                <a class="btn btn--primary" href="https://chez-maram.fr" target="_blank" rel="noopener">Visit website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="projectRow reveal">
+            <div class="projectRow__media">
+              <img src="assets/azbygg.png" alt="AZ Byggnadssnickare website screenshot" loading="lazy" />
+            </div>
+
+            <div class="projectRow__body">
+              <h3 class="h3 projectRow__title">AZ Byggnadssnickare - Vårby</h3>
+              <p class="muted projectRow__desc">
+                Construction company - a modern refresh for this firm's outdated online presence.
+                The new site focuses on credibility and clarity: services, past work, and a strong contact path - built to feel solid and professional.
+              </p>
+
+              <ul class="projectRow__bullets">
+                <li>Clean structure for services + trust signals</li>
+                <li>Responsive layout + improved readability</li>
+                <li>Modern foundation ready for growth</li>
+              </ul>
+
+              <div class="projectRow__links">
+                <a class="btn btn--primary" href="https://azbyggnadssnickare.se" target="_blank" rel="noopener">Visit website</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section container" id="contact">
+        <div class="sectionHead reveal">
+          <h2 class="h2">Contact</h2>
+          <p class="muted">Tell me what you want to build - I’ll reply within 24h.</p>
+        </div>
+
+        <div class="contactGrid">
+          <form class="form glassCard reveal" id="contactForm" action="https://formspree.io/f/xvzzooky" method="POST">
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" maxlength="80" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required maxlength="120" />
+            </div>
+
+            <div class="field">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Select a topic</option>
+                <option value="New website">New website</option>
+                <option value="Redesign">Redesign</option>
+                <option value="E-commerce">E-commerce</option>
+                <option value="SEO / performance">SEO / performance</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Briefly describe what you need, your timeline, and any links…"
+                required
+                minlength="10"
+                maxlength="2000"
+              ></textarea>
+            </div>
+
+            <input type="hidden" name="_subject" value="New message from portfolio site" />
+
+            <button class="btn btn--primary btn--full" type="submit" id="submitBtn">
+              Send message
+            </button>
+
+            <p class="muted small contactNote">
+              Prefer email? <a class="contactLink" href="mailto:mohammed16zhairi@gmail.com">mohammed16zhairi@gmail.com</a>
+            </p>
+
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="glassCard reveal contactSide">
+            <h3 class="h3">Socials</h3>
+            <p class="muted">You can also reach me on:</p>
+
+            <div class="contactSocial">
+              <a class="socialBtn" href="https://www.linkedin.com/in/zhairimohammed/" target="_blank" rel="noopener">
+                <span class="socialBtn__icon" aria-hidden="true">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+                LinkedIn
+              </a>
+
+              <a class="socialBtn" href="https://github.com/zhairi02" target="_blank" rel="noopener">
+                <span class="socialBtn__icon" aria-hidden="true">
+                  <i class="fa-brands fa-github"></i>
+                </span>
+                GitHub
+              </a>
+            </div>
+
+            <div class="contactMini">
+              <p class="muted small"><strong>Timezone:</strong> Paris (CET)</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <div class="footer__left">
+        <span class="footer__brand">Mohammed Zhairi</span>
+        <span class="muted">© <span id="year"></span> </span>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
