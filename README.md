@@ -1,4 +1,4 @@
-# Mohammed Zhairi — Portfolio
+# Mohammed Zhairi - Portfolio
 
 Personal portfolio website showcasing my work as a Full-Stack & DevOps developer, including selected freelance projects under my **Zhairi WS** brand.
 
