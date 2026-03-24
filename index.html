@@ -1,328 +1,265 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#050816" />
-
-    <title>Mohammed Zhairi - Full Stack Web Developer</title>
-    <meta name="description" content="I build modern websites from concept → branding → SEO → deployment." />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Zhairi | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Mohammed Zhairi, software developer focused on full-stack development, DevOps, Moodle platforms, and selected web solutions."
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <canvas id="starfield" aria-hidden="true"></canvas>
-
-    <div class="scroll-progress" aria-hidden="true">
-      <div class="scroll-progress__bar" id="progressBar"></div>
-    </div>
-
-    <!-- Header -->
-    <header class="site-header" id="top">
-      <nav class="nav container" aria-label="Primary">
-        <a class="brand" href="#top">
-          <img class="brand__logo" src="assets/logo2.png" alt="Logo" onerror="this.style.display='none';" />
-        </a>
-
-        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-          <span class="nav__toggleBar"></span>
-          <span class="nav__toggleBar"></span>
-          <span class="nav__toggleBar"></span>
-        </button>
-
-        <div class="nav__links" id="navLinks">
-          <a class="nav__link" href="#about">About</a>
-          <a class="nav__link" href="#services">Services</a>
-          <a class="nav__link" href="#projects">Projects</a>
-          <a class="nav__link" href="#contact">Contact</a>
-          <a class="nav__cta" href="#contact">Let’s build</a>
-        </div>
-      </nav>
-    </header>
-
     <main>
-      <!-- Hero -->
-      <section class="hero hero--full container">
-        <div class="hero__grid">
-          <div class="hero__content reveal">
-            <h1 class="hero__title">
-              Mohammed Zhairi<br />
-              <span class="hero__titleAccent">Full Stack Web Developer</span>
-            </h1>
-
-            <div class="hero__actions">
-              <a class="btn btn--primary" href="#projects">View work</a>
-              <a class="btn btn--ghost" href="#contact">Contact me</a>
-            </div>
-          </div>
+      <section class="hero container">
+        <div class="hero-photo-frame">
+          <img class="hero-photo" src="assets/profile.jpeg" alt="Portrait of Mohammed Zhairi" />
         </div>
 
-        <button class="scrollCue" type="button" aria-label="Scroll down" data-target="#about">
-          <span class="scrollCue__ring" aria-hidden="true"></span>
-          <svg class="scrollCue__icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
+        <p class="eyebrow">Software Developer, Paris</p>
+        <h1>Mohammed Zhairi</h1>
+        <div class="hero-actions">
+          <a class="hero-link" href="https://www.linkedin.com/in/zhairimohammed/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="hero-link" href="https://github.com/zhairi02" target="_blank" rel="noopener">GitHub</a>
+          <a class="hero-link" href="assets/CV_ZHAIRI_Mohammed.pdf" target="_blank" rel="noopener">View CV</a>
+        </div>
       </section>
 
-      <!-- About -->
-      <section class="section container section--about" id="about">
-        <div class="aboutCenter reveal">
-          <p class="aboutCenter__lead">
-            Hi, I’m <span class="aboutCenter__highlight">Mohammed Zhairi</span> - a
-            <span class="aboutCenter__highlight">Full Stack &amp; DevOps Developer</span> focused on building fast, modern websites that feel premium and convert.
-          </p>
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <h2>About</h2>
+        </div>
 
-          <p class="muted aboutCenter__text">
-            I’m currently completing my <strong>BSc in Computer Science</strong> at <strong>Sorbonne Université</strong>,
-            and I’m aiming to start a <strong>Master’s in 2026</strong> in <strong>alternance</strong> (MIAGE / BIS).
-            I also help <strong>medium-sized businesses (PMEs)</strong> with <strong>tailored web solutions</strong> - clean UI, solid structure, SEO-ready foundations, and reliable deployment.
+        <div class="simple-text">
+          <p>
+            Computer Science graduate at Sorbonne University with a focus on application and web development. I’m currently a Software Developer (Full-Stack &amp; DevOps) at Eummena, a Moodle Premium Partner, where I build, enhance, and maintain LMS platforms used by large-scale institutions across Europe and the MENA region, driving performance, reliability, and user experience.
+          </p>
+          <p>
+          Alongside my role, I run an independent web development practice (freelance), delivering modern, high-quality websites and web solutions to medium-sized businesses and private individuals, managing everything end-to-end, from planning and development to deployment and ongoing maintenance.
+          </p>
+          <p>
+            My current path combines technical development, project ownership, and a growing interest in information systems and software engineering at a broader level.
           </p>
         </div>
       </section>
 
-      <!-- Services -->
-      <section class="section container" id="services">
-        <div class="sectionHead reveal">
-          <h2 class="h2">Services</h2>
-          <p class="muted">Web development solutions from A to Z.</p>
-        </div>
-
-        <div class="cards3">
-          <article class="serviceMac reveal">
-            <div class="tools" aria-hidden="true">
-              <div class="circle"><span class="red box"></span></div>
-              <div class="circle"><span class="yellow box"></span></div>
-              <div class="circle"><span class="green box"></span></div>
-            </div>
-
-            <div class="serviceMac__content">
-              <h3 class="h3 serviceMac__title">Vitrine site (one page)</h3>
-              <p class="muted serviceMac__text">
-                A clean, modern landing page focused on clarity, speed, and conversion.
-              </p>
-            </div>
-          </article>
-
-          <article class="serviceMac reveal">
-            <div class="tools" aria-hidden="true">
-              <div class="circle"><span class="red box"></span></div>
-              <div class="circle"><span class="yellow box"></span></div>
-              <div class="circle"><span class="green box"></span></div>
-            </div>
-
-            <div class="serviceMac__content">
-              <h3 class="h3 serviceMac__title">Professional site (multi-page)</h3>
-              <p class="muted serviceMac__text">
-                A structured website with multiple pages to present your services and build trust.
-              </p>
-            </div>
-          </article>
-
-          <article class="serviceMac reveal">
-            <div class="tools" aria-hidden="true">
-              <div class="circle"><span class="red box"></span></div>
-              <div class="circle"><span class="yellow box"></span></div>
-              <div class="circle"><span class="green box"></span></div>
-            </div>
-
-            <div class="serviceMac__content">
-              <h3 class="h3 serviceMac__title">E-commerce site</h3>
-              <p class="muted serviceMac__text">
-                A storefront designed for smooth shopping, clear product pages, and easy checkout.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="callout reveal">
-          <div>
-            <h3 class="h3">Ready to launch something serious?</h3>
-            <p class="muted">Message me and I’ll reply with the best plan for your project.</p>
-          </div>
-          <a class="btn btn--primary" href="#contact">Request a quote</a>
-        </div>
-      </section>
-
-      <!-- Projects -->
       <section class="section container" id="projects">
-        <div class="sectionHead reveal">
-          <h2 class="h2">Projects</h2>
-          <p class="muted">Recent websites I’ve designed and built end-to-end, from concept to deployment.</p>
+        <div class="section-heading">
+          <h2>Featured Web Solutions</h2>
         </div>
 
-        <div class="projectsRows">
-          <article class="projectRow reveal">
-            <div class="projectRow__media">
-              <img src="assets/was.png" alt="WAS Redovisningskonsulter website screenshot" loading="lazy" />
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/was.png" alt="WAS Redovisningskonsulter website preview" loading="lazy" />
             </div>
-
-            <div class="projectRow__body">
-              <h3 class="h3 projectRow__title">WAS Redovisningskonsulter - Stockholm</h3>
-              <p class="muted projectRow__desc">
-                Accounting Firm - a complete web presence built from scratch - from concept to UI design, SEO foundations, and deployment.
-                The goal was simple: turn “no digital presence” into a clean, trustworthy site that makes it easy for clients to reach out.
-              </p>
-
-              <ul class="projectRow__bullets">
-                <li>Brand-aligned design + clear service structure</li>
-                <li>SEO-ready pages (titles, metadata, structure)</li>
-                <li>Fast, responsive build + reliable deployment</li>
-              </ul>
-
-              <div class="projectRow__links">
-                <a class="btn btn--primary" href="https://wasredovisningskonsulter.se" target="_blank" rel="noopener">Visit website</a>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>WAS Redovisningskonsulter</h3>
+                <span>Stockholm</span>
               </div>
+              <p>
+                Accounting firm. A complete web presence built from scratch, from concept to interface design, SEO foundations, and deployment.
+                The objective was to turn a limited digital presence into a clean and trustworthy website that makes client contact straightforward.
+              </p>
+              <ul>
+                <li>Brand-aligned design and clear service structure</li>
+                <li>SEO-ready pages with strong metadata and structure</li>
+                <li>Fast, responsive build with reliable deployment</li>
+              </ul>
+              <a class="text-link" href="https://wasredovisningskonsulter.se" target="_blank" rel="noopener">Visit website</a>
             </div>
           </article>
 
-          <article class="projectRow projectRow--rev reveal">
-            <div class="projectRow__media">
-              <img src="assets/chezmaram.png" alt="Chez Maram website screenshot" loading="lazy" />
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/chezmaram.png" alt="Chez Maram website preview" loading="lazy" />
             </div>
-
-            <div class="projectRow__body">
-              <h3 class="h3 projectRow__title">Chez Maram - Paris</h3>
-              <p class="muted projectRow__desc">
-                Café - full redesign of an outdated website to improve engagement and make key actions obvious: explore the menu, book, and find the café quickly.
-                In the last 3 months, the new experience supported a <strong>150K+</strong> user flow, with stronger SEO and visibility.
-              </p>
-
-              <ul class="projectRow__bullets">
-                <li>Simplified UI + mobile-first layout</li>
-                <li>Menu + booking flow optimized for conversion</li>
-                <li>SEO improvements + visibility support</li>
-              </ul>
-
-              <div class="projectRow__links">
-                <a class="btn btn--primary" href="https://chez-maram.fr" target="_blank" rel="noopener">Visit website</a>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>Chez Maram</h3>
+                <span>Paris</span>
               </div>
+              <p>
+                Café. A full redesign of an outdated website to improve engagement and make key actions obvious: exploring the menu, booking, and finding the café quickly.
+                In the last three months, the new experience supported a 150K+ user flow, with stronger visibility and SEO foundations.
+              </p>
+              <ul>
+                <li>Simplified interface and mobile-first layout</li>
+                <li>Menu and booking flow improved for clarity</li>
+                <li>SEO improvements and visibility support</li>
+              </ul>
+              <a class="text-link" href="https://chez-maram.fr" target="_blank" rel="noopener">Visit website</a>
             </div>
           </article>
 
-          <article class="projectRow reveal">
-            <div class="projectRow__media">
-              <img src="assets/azbygg.png" alt="AZ Byggnadssnickare website screenshot" loading="lazy" />
+          <article class="project-card">
+            <div class="project-media">
+              <img src="assets/azbygg.png" alt="AZ Byggnadssnickare website preview" loading="lazy" />
             </div>
-
-            <div class="projectRow__body">
-              <h3 class="h3 projectRow__title">AZ Byggnadssnickare - Vårby</h3>
-              <p class="muted projectRow__desc">
-                Construction company - a modern refresh for this firm's outdated online presence.
-                The new site focuses on credibility and clarity: services, past work, and a strong contact path - built to feel solid and professional.
-              </p>
-
-              <ul class="projectRow__bullets">
-                <li>Clean structure for services + trust signals</li>
-                <li>Responsive layout + improved readability</li>
-                <li>Modern foundation ready for growth</li>
-              </ul>
-
-              <div class="projectRow__links">
-                <a class="btn btn--primary" href="https://azbyggnadssnickare.se" target="_blank" rel="noopener">Visit website</a>
+            <div class="project-content">
+              <div class="project-topline">
+                <h3>AZ Byggnadssnickare</h3>
+                <span>Vårby</span>
               </div>
+              <p>
+                Construction company. A modern refresh of an outdated online presence.
+                The new website focuses on credibility and clarity: services, past work, and a direct contact path, all presented in a solid and professional way.
+              </p>
+              <ul>
+                <li>Clear structure for services and trust signals</li>
+                <li>Responsive layout with improved readability</li>
+                <li>Modern base designed to scale over time</li>
+              </ul>
+              <a class="text-link" href="https://azbyggnadssnickare.se" target="_blank" rel="noopener">Visit website</a>
             </div>
           </article>
         </div>
       </section>
 
-      <!-- Contact -->
+      <section class="section container" id="profile">
+        <div class="section-heading">
+          <h2>Profile</h2>
+        </div>
+
+
+
+        <div class="profile-sheet">
+          <div class="profile-line">
+            <div class="profile-label">Experience</div>
+            <div class="profile-body">
+              <div class="entry">
+                <div class="entry-head">
+                  <h4>Eummena</h4>
+                  <span>Mar 2025 - Present</span>
+                </div>
+                <p class="entry-role">Software Developer, Full-Stack &amp; DevOps</p>
+                <p>
+                  Development and maintenance of Moodle-based e-learning platforms, plugin and API development,
+                  DevOps work around Docker standardization, and collaboration within an international Agile team.
+                </p>
+              </div>
+
+              <div class="entry">
+                <div class="entry-head">
+                  <h4>Zhairi WS</h4>
+                  <span>Feb 2025 - Present</span>
+                </div>
+                <p class="entry-role">Founder and Developer</p>
+                <p>
+                  End-to-end web project delivery for small businesses, including design direction, implementation,
+                  deployment, maintenance, and visibility improvements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-line">
+            <div class="profile-label">Education</div>
+            <div class="profile-body">
+              <div class="entry">
+                <div class="entry-head">
+                  <h4>Sorbonne Université</h4>
+                  <span>Sep 2023 - May 2026</span>
+                </div>
+                <p class="entry-role">Licence Informatique</p>
+                <p>
+                  Application development track with growing experience across software engineering, systems,
+                  databases, algorithms, and web technologies.
+                </p>
+              </div>
+
+              <div class="entry">
+                <div class="entry-head">
+                  <h4>Al Mustaqbal School</h4>
+                  <span>June 2023</span>
+                </div>
+                <p class="entry-role">GCE A Level Diploma</p>
+                <p>
+                  British secondary education diploma. Physics, Maths, and Information Technology A levels, with
+                  grades A, A, and A*.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-line">
+            <div class="profile-label">Skills</div>
+            <div class="profile-body skills-grid">
+              <div>
+                <div class="entry-head"><h4>Languages &amp; Frameworks</h4></div>
+                <p>Java, C, Python, PHP, JavaScript, SQL, HTML, CSS, TypeScript, Angular, React</p>
+              </div>
+              <div>
+                <div class="entry-head"><h4>Tools</h4></div>
+                <p>Git, Bash, Linux, Docker, Grafana, Moodle, WordPress, MySQL, MariaDB, CI/CD, APIs</p>
+              </div>
+              <div>
+                <div class="entry-head"><h4>Spoken Languages</h4></div>
+                <p>French, English, Arabic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section container" id="contact">
         <div class="sectionHead reveal">
           <h2 class="h2">Contact</h2>
+<<<<<<< HEAD
           <p class="muted"> </p>
+=======
+          <p class="muted">Tell me what you want to build - I’ll reply within 24h.</p>
+>>>>>>> d504e25 (New site)
         </div>
 
-        <div class="contactGrid">
-          <form class="form glassCard reveal" id="contactForm" action="https://formspree.io/f/xvzzooky" method="POST">
-            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xvzzooky" method="POST">
+          <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" maxlength="80" />
-            </div>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" maxlength="80" />
+          </div>
 
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required maxlength="120" />
-            </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required maxlength="120" />
+          </div>
 
-            <div class="field">
-              <label for="topic">Topic</label>
-              <select id="topic" name="topic" required>
-                <option value="" selected disabled>Select a topic</option>
-                <option value="New website">New website</option>
-                <option value="Redesign">Redesign</option>
-                <option value="E-commerce">E-commerce</option>
-                <option value="SEO / performance">SEO / performance</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Your message"
+              required
+              minlength="10"
+              maxlength="2000"
+            ></textarea>
+          </div>
 
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="6"
-                placeholder="Briefly describe what you need, your timeline, and any links…"
-                required
-                minlength="10"
-                maxlength="2000"
-              ></textarea>
-            </div>
+          <input type="hidden" name="_subject" value="New message from portfolio site" />
 
-            <input type="hidden" name="_subject" value="New message from portfolio site" />
-
-            <button class="btn btn--primary btn--full" type="submit" id="submitBtn">
-              Send message
+          <div class="contact-actions">
+            <button class="button contact-submit" type="submit">
+              Send
+              <span class="button-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 2 11 13"></path>
+                  <path d="M22 2 15 22l-4-9-9-4 20-7Z"></path>
+                </svg>
+              </span>
             </button>
-
-            <p class="muted small contactNote">
-              Prefer email? <a class="contactLink" href="mailto:mohammed16zhairi@gmail.com">mohammed16zhairi@gmail.com</a>
-            </p>
-
-            <div class="toast" id="toast" role="status" aria-live="polite"></div>
-          </form>
-
-          <aside class="glassCard reveal contactSide">
-            <h3 class="h3">Socials</h3>
-            <p class="muted">You can also reach me on:</p>
-
-            <div class="contactSocial">
-              <a class="socialBtn" href="https://www.linkedin.com/in/zhairimohammed/" target="_blank" rel="noopener">
-                <span class="socialBtn__icon" aria-hidden="true">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </span>
-                LinkedIn
-              </a>
-
-              <a class="socialBtn" href="https://github.com/zhairi02" target="_blank" rel="noopener">
-                <span class="socialBtn__icon" aria-hidden="true">
-                  <i class="fa-brands fa-github"></i>
-                </span>
-                GitHub
-              </a>
-            </div>
-
-            <div class="contactMini">
-              <p class="muted small"><strong>Timezone:</strong> Paris (CET)</p>
-            </div>
-          </aside>
-        </div>
+          </div>
+        </form>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer container">
-      <div class="footer__left">
-        <span class="footer__brand">Mohammed Zhairi</span>
-        <span class="muted">© <span id="year"></span> </span>
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <span>© <span id="year"></span> Mohammed Zhairi</span>
       </div>
     </footer>
 
